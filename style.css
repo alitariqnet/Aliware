@@ -28,3 +28,21 @@ body {
     font-size: 50px;
     font-family: fantasy;
 }
+
+.rubik-iso-regular {
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-80s-fade-regular {
+  font-family: "Rubik 80s Fade", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.rubik-glitch-regular {
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
