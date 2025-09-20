@@ -1,6 +1,5 @@
 body {
-     background-color: antiquewhite; 
-      
+     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 .top-nav{
   display: inline;
@@ -120,7 +119,7 @@ footer{
   font-family: Bpreplay;
 }
 
-#rounded {
+.rounded {
   /* width: 200px; */
   /* Use transparent so the background image is visible */
   border: 5px solid transparent;
@@ -138,4 +137,12 @@ footer{
 
 #contact service{
   text-align: center;
+}
+.service-card{
+  width: auto; 
+  height: 150px; 
+  background-color: wheat;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
 }

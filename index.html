@@ -79,24 +79,25 @@
         <p style="text-justify: distribute-all-lines; padding: 100px; font-size: 20px; font-family: Bpreplay; ">We are a software development services agency. We develop
             different kinds of software, such as, application software, static website design & development, mobile
             applications, custom ERP solutions and graphics design & branding services.</p>
-            <div style="display: grid; flex-direction: row; grid-template-columns: 25%x 25% 25% 25%; ">
-                <div style="width: 50px; height: 50px; background-color: purple;"> box 1</div>
-                <div style="width: 50px; height: 50px; background-color: purple;"> box 2</div>
-                <div style="width: 50px; height: 50px; background-color: purple;"> box 3</div>
-                <div style="width: 50px; height: 50px; background-color: purple;"> box 4</div>
+            <div style="display: flex; flex-direction: row; justify-content: space-evenly; ">
+                <div class="service-card"> Web Design & Development</div>
+                <div class="service-card"> Application Software Development</div>
+                <div class="service-card"> Mobile Application Develoment</div>
+                <div class="service-card"> Graphic Design & Branding</div>
+                <div class="service-card"> SEO & Digital Marketing</div>
             </div>
     </section>
     <div style="height: 100px;"></div>
     <section id="Products" style="text-align:center;">
         <h1 style="font-size: 50px;">Products</h1>
-        <div style="display: auto; flex-direction: row; justify-content: space-evenly; padding: 100px;">
+        <div style=" justify-content: space-evenly; padding: 100px;">
             <div>
                 <a href="https://www.doctorone.click" target="_blank" style="text-decoration: none;">
                     <h2>Doctor OneClick</h2>
-                    <img id="rounded" src="./images/doc.jpg" width="300" height="200" alt="Doctor waving hand to patient"
+                    <img class="rounded" src="./images/doc.jpg" width="300" height="200" alt="Doctor waving hand to patient"
                         style="float: left; margin-right: 30px; margin-bottom: 20px;">
                 </a>
-                    <p style="font-size: x-large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: justify; text-justify: distribute; ">Doctor
+                    <p style="font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: justify; text-justify: distribute; ">Doctor
                         OneClick is an easy doctor appointment and patient management system. The motivation of building
                         such software is to provide patients with easy access to doctors around their homes and
                         connecting them 24/7. Patients or their caretakers are now able to schedule appointments with
@@ -104,13 +105,13 @@
                         presenece is not neccessary or in-person checkup in the click as suggested by the doctor. There
                         are many more feature available in this.</p>
             </div>
-<br>
+<br><br><br>
             <div>
                 <h2>Fielderr</h2>
-                <img id="rounded" src="./images/fielderr.jpg" width="300" height="200" alt="Sales rep talking to pharmacist"
+                <img class="rounded" src="./images/fielderr.jpg" width="300" height="200" alt="Sales rep talking to pharmacist"
                     style="float: left; margin-right: 30px; margin-bottom: 20px;">
                 <p
-                    style=" font-size: x-large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: justify; text-justify: distribute-all-lines;">
+                    style=" font-size: large; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                     Fielderr is a field service system software. It is a territory mapping tool with tasks dispatching
                     and tracking features. Fielderr is a B2B software that manages day to day operations of field
                     working businesses such as pharma companies in which workers visit pharmacies to ensure their
@@ -136,29 +137,31 @@
         <div class="footer">
             <div style="max-width: 300px;">
                 <span class="logo-text rubik-glitch-regular">ALIWARE</span>
-                <br />
+                <br> <br>
                 <div class="footer-about">We are a software development services agency. We develop
                     different kinds of software, such as, application software, static website design & development, and
                     mobile applications. We also offer graphics design & branding services.</div>
             </div>
-            <div><h2>Services</h2>
-                <ul class="list-style-none">
+            <div>
+                <ul class="list-style-none" style="line-height: 30px; font-family: Bpreplay;">
+                    <h2>Services</h2>
                     <li>Web Design & Development</li>
                     <li>Application Software Development</li>
                     <li>Mobile Application Development</li>
-                    <li>Graphic Designing</li>
-                    <li>Branding & Theme selection</li>
+                    <li>Graphic Design & Branding</li>
+                    <li>SEO & Digital Marketing</li>
                 </ul>
             </div>
-            <div><h2>Products</h2>
-                <ul class="list-style-none">
-                    <a href="https://www.doctorone.click" style="text-decoration: none;"><li>Doctor OneClick</li></a>
+            <div>
+                <ul class="list-style-none"  style="line-height: 30px; font-family: Bpreplay;">
+                    <h2>Products</h2>
+                    <li><a href="https://www.doctorone.click" style="text-decoration: none;">Doctor OneClick</a></li>
                     <li>Fielderr</li>
                 </ul>
             </div>
         </div>
     </footer>
-    <div style="text-align: center;">Aliware &copy; All rights reserved.</div>
+    <div style="text-align: center; margin-top: 150px;">Aliware &copy; All rights reserved.</div>
 </body>
 
 </html>
