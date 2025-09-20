@@ -141,7 +141,7 @@ footer{
 .service-card{
   width: auto; 
   height: 150px; 
-  background-color: wheat;
+  background-color: transparent;
   padding: 20px;
   border: 1px solid black;
   border-radius: 15px;
