@@ -128,7 +128,10 @@ footer{
   font-size: small;
   font-family: Bpreplay;
 }
-
+.description{
+  /* font-size: small; */
+  font-family: Bpreplay;
+}
 .rounded {
   /* width: 200px; */
   /* Use transparent so the background image is visible */
