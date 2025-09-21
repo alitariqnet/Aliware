@@ -1,5 +1,5 @@
 body {
-     background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+     /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c); */
 }
 .top-nav{
   display: inline;
@@ -24,7 +24,7 @@ width: 100%;
       justify-content: center; 
       align-items: center; 
       align-content: center;
-      background-image: url("./images/website-design.jpeg");
+      /* background-image: url("./images/website-design.jpeg"); */
       background-repeat: no-repeat;
       background-color: transparent;
       background-size: cover;
@@ -93,6 +93,16 @@ width: 100%;
 @font-face {
   font-family: "Bpreplay";
   src: url("fonts/bpreplay/BPreplayExtended.otf");
+}
+
+@font-face {
+  font-family: "Neuropol";
+  src: url("fonts/neuropol/Neuropol.otf");
+}
+
+@font-face {
+  font-family: "Wheaton";
+  src: url("fonts/wheaton-capitals/wheaton\ capitals.otf");
 }
 
 .logo-text{
