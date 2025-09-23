@@ -163,3 +163,7 @@ footer{
 .service-card > h4{
  font-family: Neuropol;
 }
+#socials > li{
+    display: inline-block;
+    padding-right: 15px;
+}
