@@ -80,7 +80,7 @@ width: 100%;
     "YPN2" 0;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Nevera";
   src: url("fonts/nevera/Nevera-Regular.otf");
 }
@@ -88,9 +88,9 @@ width: 100%;
 @font-face {
   font-family: "Rosehot";
   src: url("fonts/rosehot-free-version/Rosehot.ttf");
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: "Bpreplay";
   src: url("fonts/bpreplay/BPreplayExtended.otf");
 }
@@ -103,6 +103,11 @@ width: 100%;
 @font-face {
   font-family: "Wheaton";
   src: url("fonts/wheaton-capitals/wheaton\ capitals.otf");
+} */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat/static/Montserrat-Regular.ttf");
 }
 
 .logo-text{
@@ -153,16 +158,14 @@ footer{
 }
 .service-card{
   width: 15%; 
-  height: 150px; 
+  height: 100px; 
   background-color: transparent;
   padding: 20px;
   /* border: 1px solid black; */
   border-radius: 15px;  
   box-shadow: inset 1em 1em gold;
 }
-.service-card > h4{
- font-family: Neuropol;
-}
+
 #socials > li{
     display: inline-block;
     padding-right: 15px;
