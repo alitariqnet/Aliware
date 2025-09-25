@@ -39,10 +39,10 @@
 
         <div class="nav-main-div">
             <div class="">
-                <span class="logo-text rubik-glitch-regular"> ALIWARE </span>
-                <div class="" style="float: right;font-size: large; font-family: Montserrat;">Software services</div>
+                <span class="logo-text rubik-glitch-regular"> <img id="logo-above-img"
+                        src="./images/logos/0.75x/Asset 6ldpi.png" alt=""> </span>
             </div>
-            <div class="nav-section" style="font-family: Montserrat;">
+            <div class="nav-section font-style-montserrat">
                 <ul style="display: flex;list-style-type: none; justify-content: space-evenly;">
                     <li><a href="#services" style="text-decoration: none;">Services</a></li>
                     <li><a href="#products" style="text-decoration: none;">Products</a></li>
@@ -55,20 +55,21 @@
             </div>
         </div>
     </nav>
+
     <!-- <section id="nav" style="height:100px"> -->
 
     </section>
     <div style="height: 100px;"></div>
 
     <section id="main">
-        <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+        <div id="main-outer" style="display: flex; justify-content: space-evenly;">
             <div class="main-content"
                 style="height: 100%; justify-content: center; align-self: center; display: flex; flex-direction: row;">
-                <div
-                    style="height: fit-content;width: min-content;">
+                <div style="height: fit-content;width: min-content;">
 
-                    <div class="content rubik-glitch-regular" style="font-size: 100px;">ALIWARE</div>
-                    <div style="font-family: Montserrat; font-weight: 500">One solution for your tech problems</div>
+                    <div id="aliware-main" class="content rubik-glitch-regular headings" style="font-size: 100px;">
+                        ALIWARE</div>
+                    <div class="font-style-montserrat">One solution for your tech problems</div>
                 </div>
             </div>
             <div><img src="./images/developer-team.svg" alt="" width="500px" height="500px"></div>
@@ -82,51 +83,65 @@
 
 
 
-    <section id="services" style="text-align: center;">
-        <span style="font-size: 50px; font-family: Montserrat;">What services do we offer?</span>
+    <section id="services" style="text-align: center;" class="font-style-montserrat">
+        <span class="headings" style="font-size: 50px; ">What services do we offer?</span>
         <br>
-        <p style="text-justify: distribute-all-lines; padding: 100px; font-size: 20px; font-family: Montserrat; ">
+        <p style="text-justify: distribute-all-lines; padding: 100px; font-size: 20px; ">
             We are a software development services agency. We develop
             different kinds of software, such as, application software, static website design & development, and mobile
             applications. We also offer graphics design & branding services.
         </p>
-        <div style="display: flex; flex-direction: row; justify-content: space-evenly; font-family: Montserrat;">
+        <div id="service-cards" style="display: flex; justify-content: space-evenly;">
             <div class="service-card">
-                <h4>Web Design & Development</h4>
-<p> With free content</p>
+                <h3 style="text-align: center;">Web Design & Development</h3>
+                <br>Free content, text and images
+                <br>Responsive design
+                <br>SEO friendly
+                <br>Free domain for one year
+                <br>Free SSL certificate
+                <br>Free support for 3 months
+                <br>Free emails upto 3 users
+                <br>Free Google business profile
             </div>
             <div class="service-card">
-                <h4>SEO & Digital Marketing</h4>
-                <p>With free Google trends, Google analytics</p>
+                <h3>SEO, SMM & Digital Marketing</h3>
+                <p>Organic traffic with free Google trends, Google analytics and social media accounts management. Ad
+                    words and Ad sense.</p>
             </div>
             <div class="service-card">
-                <h4> Custom Software Development </h4>
+                <h3> Custom Software Development </h3>
+                <p>Application software develpment is done using well known technological stacks:</p>
+                <p>Node.js, .NET, Java, with Reactjs and Angular on the front-end and ORACLE, MYSQL, SQL SERVER, and
+                    POSTGRESQL as databases.</p>
             </div>
             <div class="service-card">
-                <h4> Mobile Application Develoment </h4>
+                <h3> Mobile Application Develoment </h3>
+                <p>React Native for Android and IOS user interface with firebase integration, and Expressjs and Nodejs.
+                </p>
             </div>
             <div class="service-card">
-                <h4> Graphic Design & Branding </h4>
+                <h3> Graphic Design & Branding </h3>
+                Adobe illustrator, Photoshop, Canva, Figma, CorelDRAW, Inkscape, GIMP, and with AI tools.
             </div>
         </div>
     </section>
+    <div style="height: 100px;"></div>
     <div style="height: 100px;"></div>
     <div style="height: 10px;background-color: gold; width: 75%;float: right; left: 0px;"></div>
     <div style="height: 100px;"></div>
     <div style="height: 100px;"></div>
 
     <section id="products" style="text-align:center;">
-        <h1 style="font-size: 50px; font-family: Montserrat;">What products are we developing?</h1>
+        <span class="headings" style="font-size: 50px;">What products are we developing?</span>
         <div style="display: flex; flex-direction: column; justify-content: space-evenly; padding: 100px;">
             <div>
                 <a href="https://www.doctorone.click" target="_blank" style="text-decoration: none;">
-                    <h2 class="description" style="justify-self: start;">Doctor OneClick</h2>
-                    <img class="rounded" src="./images/doc.jpg" width="300" height="200"
+                    <h2 class="description font-style-montserrat" style="justify-self: start;">Doctor OneClick</h2>
+                    <img class="rounded product-image" src="./images/doc.jpg" width="300" height="200"
                         alt="Doctor waving hand to patient"
                         style="float: left; margin-right: 30px; margin-bottom: 20px;">
                 </a>
-                <p class="description"
-                    style="font-size: large; font-family: Montserrat; text-align: justify; text-justify: distribute; ">
+                <p class="description font-style-montserrat font-large-text-align-left">
                     Doctor
                     OneClick is an easy doctor appointment and patient management system. The motivation of building
                     such software is to provide patients with easy access to doctors around their homes and
@@ -136,11 +151,10 @@
                     are many more feature available in this software.</p>
             </div>
             <div>
-                <h2 class="description" style="justify-self: start;">Fielderr</h2>
-                <img class="rounded" src="./images/fielderr.jpg" width="300" height="200"
+                <h2 class="description font-style-montserrat" style="justify-self: start;">Fielderr</h2>
+                <img class="rounded product-image" src="./images/fielderr.jpg" width="300" height="200"
                     alt="Sales rep talking to pharmacist" style="float: left; margin-right: 30px; margin-bottom: 20px;">
-                <p class="description"
-                    style=" font-size: large; font-family: Montserrat; text-align: justify; text-justify: distribute;">
+                <p class="description font-style-montserrat font-large-text-align-left">
                     Fielderr is a field service system software. It is a territory mapping tool with tasks dispatching
                     and tracking features. Fielderr is a B2B software that manages day to day operations of field
                     working businesses such as pharma companies in which workers visit pharmacies to ensure their
@@ -155,9 +169,9 @@
     </section>
     <div style="height: 10px;background-color: gold; width: 75%;"></div>
     <div style="height: 100px;"></div>
-    <section id="ceosmessage" style="text-align: center;">
-        <span style="font-size: 50px; font-family: Montserrat; ">Why do you need it?</span><br><br><br>
-        <div style=" font-family: Montserrat; padding: 100px;">
+    <section id="ceosmessage" style="text-align: center;" class="font-style-montserrat">
+        <span class="headings" style="font-size: 50px;">Why do you need it?</span><br><br><br>
+        <div style=" padding: 100px; font-size: large;">
             <q>Organizations' routine tasks are being digitized rapidly around the world. However, many organizations
                 still
                 struggle with day to day operations manually. The problem with manual work is that it is
@@ -169,17 +183,17 @@
                 tasks can free up valuable time and resources, allowing businesses to focus on strategic growth and
                 innovation, leading to save expenses. Moreover, ensuring online accessibility through robust digital
                 platforms can expand a business’s reach, providing customers with convenient access to products and
-                services anytime, anywhere...</q><a href="https://www.youtube.com/watch?v=PeD35QUO_Vs" target="_blank"
-                style="text-decoration: none;"> Learn more</a>
+                services anytime, anywhere...</q><a href=" https://www.youtube.com/watch?v=PeD35QUO_Vs" target="_blank"
+            style="text-decoration: none;"> Learn more</a>
         </div>
     </section>
     <div style="height: 10px;background-color: gold; width: 75%; float: right;"></div>
     <div style="height: 100px;"></div>
     <div style="height: 100px;"></div>
-    <section id="contact" style="text-align: center;">
-        <span style="font-size: 50px; font-family: Montserrat;">Let's get started</span><br> <br> <br>
-        <span style="font-size: small; font-family: Montserrat; ">Email us your requirements <br> <a
-                href="mailto:quote@aliware.online" style="text-decoration: none;">quote@aliware.online</a></span>
+    <section id="contact" style="text-align: center;" class="font-style-montserrat">
+        <span class="headings" style="font-size: 50px;">Let's get started</span><br> <br> <br>
+        <span style="font-size: medium; ">Email us your requirements <br> <a href="mailto:quote@aliware.online"
+                style="text-decoration: none;">quote@aliware.online</a></span>
         <br><br>
 
     </section>
@@ -191,25 +205,27 @@
     <footer>
         <div class="footer">
             <div style="max-width: 300px;">
-                <span class="logo-text rubik-glitch-regular">ALIWARE</span>
+                <!-- <span class="logo-text rubik-glitch-regular">ALIWARE</span> -->
+                <img src="./images/logos/0.75x/Asset 6ldpi.png" alt="">
                 <br> <br>
-                <div class="footer-about">We are a software development services agency. We develop
-                    different kinds of software, such as, application software, static website design & development, and
+                <div class="footer-about font-style-montserrat">We are a software development services agency. We
+                    develop
+                    different kinds of softwares tailored to our client's needs, such as, application software, static
+                    website design & development, and
                     mobile applications. We also offer graphics design & branding services.</div>
                 <br>
                 <div class="footer-about">Address: <strong>Office 327, 4th floor, Eden center,
                         Jail Road, Lahore, Pakistan.</strong></div>
                 <br>
-                <div class="footer-about"> <a href="https://share.google/f3NWuG4zDE8DlkFXY" target="_blank"
-                        style="text-decoration: none; font-family: Montserrat;">
+                <div class="footer-about font-style-montserrat"> <a href="https://share.google/f3NWuG4zDE8DlkFXY"
+                        target="_blank" style="text-decoration: none;">
                         Google profile</a></div>
                 <br><br>
-                <a aria-label="Chat on WhatsApp" href="https://wa.me/923001118174" target=_blank><img height="30px"
-                        alt="Chat on WhatsApp" src="./images/WhatsAppButtonGreenSmall.png" /> </a>
+
             </div>
             <div>
-                <ul class="list-style-none" style="line-height: 30px; font-family: Montserrat;">
-                    <h2 style="font-family: Montserrat;">Services</h2>
+                <ul class="list-style-none font-style-montserrat" style="line-height: 30px; ">
+                    <h2>Services</h2>
                     <li>Web Design & Development</li>
                     <li>Application Software Development</li>
                     <li>Mobile Application Development</li>
@@ -220,15 +236,15 @@
                 </ul>
             </div>
             <div>
-                <ul class="list-style-none" style="line-height: 30px; font-family: Montserrat;">
-                    <h2 style="font-family: Montserrat;">Products</h2>
+                <ul class="list-style-none font-style-montserrat" style="line-height: 30px; ">
+                    <h2>Products</h2>
                     <li><a href="https://www.doctorone.click" style="text-decoration: none;">Doctor OneClick</a></li>
                     <li>Fielderr</li>
                 </ul>
             </div>
             <div>
-                <ul id="socials" class="list-style-none" style="line-height: 30px; font-family: Montserrat;">
-                    <h2 style="font-family: Montserrat;">Socials</h2>
+                <ul id="socials" class="list-style-none font-style-montserrat" style="line-height: 30px;">
+                    <h2>Socials</h2>
                     <li><a href="https://github.com/AliwareOnline" target="_blank" style="text-decoration: none;"><img
                                 src="images/github-mark.png" alt="Github logo" width="30px"></a></li>
                     <li><a href="https://www.linkedin.com/company/103904048" target="_blank"
@@ -238,6 +254,9 @@
                             style="text-decoration: none;"><img
                                 src="images/Facebook Brand Asset Pack/Logo/Secondary Logo/Facebook_Logo_Secondary.png"
                                 alt="Facebook logo" width="30px"></a></li>
+                    <li> <a aria-label="Chat on WhatsApp" href="https://wa.me/923001118174" target=_blank><img
+                                height="30px" alt="Chat on WhatsApp" src="./images/WhatsAppButtonGreenSmall.png" /> </a>
+                    </li>
                 </ul>
             </div>
         </div>

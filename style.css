@@ -1,45 +1,49 @@
 body {
-     background: linear-gradient(0.5turn, #4fa8cf, #b1e987, #3c58f6);
+  background: linear-gradient(0.5turn, #eba8e0, #d29ee9, #9495ef);
+  font-family: Montserrat;
+
 }
-.top-nav{
+
+.top-nav {
   display: inline;
   background-color: transparent;
   height: 30px;
   width: 100%;
 }
-.nav-main-div{
+
+.nav-main-div {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-.nav-section{
-width: 100%;
+.nav-section {
+  width: 100%;
 }
 
-.main-content{
+.main-content {
   position: relative;
-      height: 100%;
-      display: flex; 
-      justify-content: center; 
-      align-items: center; 
-      align-content: center;
-      /* background-image: url("./images/website-design.jpeg"); */
-      background-repeat: no-repeat;
-      background-color: transparent;
-      background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* background-image: url("./images/website-design.jpeg"); */
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: cover;
 }
 
-.content{
-    font-size: 50px;
-    font-family: fantasy;
+.content {
+  font-size: 50px;
+  font-family: fantasy;
 }
 
 .rubik-iso-regular {
   font-family: "Rubik Iso", system-ui;
   font-weight: 400;
   font-style: normal;
-  color:#caff38ff;
+  color: #caff38ff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
 }
@@ -48,16 +52,16 @@ width: 100%;
   font-family: "Rubik 80s Fade", system-ui;
   font-weight: 400;
   font-style: normal;
-  color:#f58356ff;
+  color: #f58356ff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  
+
 }
 
 .rubik-glitch-regular {
   font-family: "Rubik Glitch", system-ui;
   font-weight: 400;
   font-style: normal;
-  color:#30f88aff;
+  color: #30f88aff;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
@@ -110,33 +114,37 @@ width: 100%;
   src: url("fonts/Montserrat/static/Montserrat-Regular.ttf");
 }
 
-.logo-text{
+.logo-text {
   font-size: 2em;
 }
 
-footer{
+footer {
   height: 200px;
-  bottom: 0px; 
+  bottom: 0px;
   /* left:0px;  */
   width: 100%;
   background-color: transparent;
   padding-bottom: 50px;
-  
+
 }
-.footer{
+
+.footer {
   display: flex;
   justify-content: space-evenly;
   padding: 50px;
   margin-top: 50px;
 }
-.footer-about{
+
+.footer-about {
   font-size: small;
   font-family: Bpreplay;
 }
-.description{
+
+.description {
   /* font-size: small; */
   font-family: Bpreplay;
 }
+
 .rounded {
   /* width: 200px; */
   /* Use transparent so the background image is visible */
@@ -149,24 +157,75 @@ footer{
   background-clip: padding-box, border-box;
 }
 
-.list-style-none{
+.list-style-none {
   list-style-type: none;
 }
 
-#contact service{
+#contact service {
   text-align: center;
 }
-.service-card{
-  width: 15%; 
-  height: 100px; 
-  background-color: transparent;
-  padding: 20px;
+
+.service-card {
+  width: 15%;
+  height: 300px;
+  background-color: rgb(253, 124, 193);
+  padding: 10px;
+  margin: 5px;
   /* border: 1px solid black; */
-  border-radius: 15px;  
-  box-shadow: inset 1em 1em gold;
+  border-radius: 15px;
+  /* box-shadow: inset 1em 1em gold; */
+  text-align: left;
+  min-height: fit-content;
+  box-shadow: #9495ef 0px 0px 20px, #d29ee9 0px 0px 30px, #eba8e0 0px 0px 40px;
 }
 
-#socials > li{
-    display: inline-block;
-    padding-right: 15px;
+.service-card>li {
+  text-align: left;
+}
+
+#socials>li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.font-style-montserrat {
+  font-family: Montserrat;
+}
+
+.font-large-text-align-left {
+  font-size: large;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .service-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .footer{
+    flex-direction: column;
+    align-items: center;  
+  }
+  .main-content{
+    flex-direction: column;
+  }
+  #main-outer{
+    flex-direction: column;
+  }
+  #service-cards{
+    flex-direction: column;
+  }
+  #logo-above-img{
+    height: 40px;
+  }
+  #aliware-main{
+    font-size: 50px !important;
+  }
+
+  .headings{
+    font-size: 30px !important;
+  }
+  .product-image{
+    width: 80% !important;
+  }
 }

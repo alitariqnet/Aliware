@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 391 127">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #2e3192;
+      }
+
+      .cls-3 {
+        fill: red;
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        filter: url(#outer-glow-1);
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 72px;
+        font-weight: 700;
+      }
+    </style>
+    <filter id="outer-glow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="5"/>
+      <feFlood flood-color="#000" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-4" transform="translate(16.54 76.85)"><tspan class="cls-2" x="0" y="0">AL</tspan><tspan class="cls-3" x="98.64" y="0">I</tspan><tspan class="cls-1" x="121.17" y="0">W</tspan><tspan class="cls-2" x="202.17" y="0">ARE</tspan></text>
+  </g>
+</svg>
