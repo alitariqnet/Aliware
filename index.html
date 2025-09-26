@@ -44,11 +44,11 @@
             </div>
             <div class="nav-section font-style-montserrat">
                 <ul style="display: flex;list-style-type: none; justify-content: space-evenly;">
-                    <li><a href="#services" style="text-decoration: none;">Services</a></li>
-                    <li><a href="#products" style="text-decoration: none;">Products</a></li>
+                    <li id="services-li-item"><a href="#services" style="text-decoration: none;">Services</a></li>
+                    <li id="products-li-item"><a href="#products" style="text-decoration: none;">Products</a></li>
                     <a href="#contact" style="text-decoration: none;">
                         <li
-                            style="background-color: green; padding: 13px; border-radius: 15px; border: 1px solid black; color:wheat">
+                            style="background-color: #30f88aff; padding: 13px; border-radius: 15px; border: 1px solid black; color:black">
                             Get a quote</li>
                     </a>
                 </ul>
@@ -69,10 +69,10 @@
 
                     <div id="aliware-main" class="content rubik-glitch-regular headings" style="font-size: 100px;">
                         ALIWARE</div>
-                    <div class="font-style-montserrat">One solution for your tech problems</div>
+                    <div id="one-liner-main" class="font-style-montserrat">One solution for your tech problems</div>
                 </div>
             </div>
-            <div><img src="./images/developer-team.svg" alt="" width="500px" height="500px"></div>
+            <div id="image-div"><img id="main-image" src="./images/developer-team.svg" alt="" width="500px" height="500px"></div>
         </div>
     </section>
     <div style="height: 100px;"></div>
@@ -86,14 +86,14 @@
     <section id="services" style="text-align: center;" class="font-style-montserrat">
         <span class="headings" style="font-size: 50px; ">What services do we offer?</span>
         <br>
-        <p style="text-justify: distribute-all-lines; padding: 100px; font-size: 20px; ">
+        <p id="desc-text" style="padding: 100px; font-size: 20px; ">
             We are a software development services agency. We develop
             different kinds of software, such as, application software, static website design & development, and mobile
             applications. We also offer graphics design & branding services.
         </p>
         <div id="service-cards" style="display: flex; justify-content: space-evenly;">
             <div class="service-card">
-                <h3 style="text-align: center;">Web Design & Development</h3>
+                <h3>Web Design & Development</h3>
                 <br>Free content, text and images
                 <br>Responsive design
                 <br>SEO friendly
@@ -104,24 +104,23 @@
                 <br>Free Google business profile
             </div>
             <div class="service-card">
-                <h3>SEO, SMM & Digital Marketing</h3>
-                <p>Organic traffic with free Google trends, Google analytics and social media accounts management. Ad
-                    words and Ad sense.</p>
+                <h3>SEO, SMM & Digital Marketing</h3><br>
+                <p>Organic traffic with free Google trends, Google analytics and social media accounts management</p>
             </div>
             <div class="service-card">
-                <h3> Custom Software Development </h3>
+                <h3> Custom Software Development </h3><br>
                 <p>Application software develpment is done using well known technological stacks:</p>
-                <p>Node.js, .NET, Java, with Reactjs and Angular on the front-end and ORACLE, MYSQL, SQL SERVER, and
-                    POSTGRESQL as databases.</p>
+                <p>Node.js, .NET, Java, with Reactjs and Angular, and ORACLE, MYSQL, SQL SERVER, and
+                    POSTGRESQL</p>
             </div>
             <div class="service-card">
-                <h3> Mobile Application Develoment </h3>
-                <p>React Native for Android and IOS user interface with firebase integration, and Expressjs and Nodejs.
+                <h3> Mobile Application Develoment </h3><br>
+                <p>React Native for Android and IOS user interface with firebase integration, and Expressjs and Nodejs
                 </p>
             </div>
             <div class="service-card">
-                <h3> Graphic Design & Branding </h3>
-                Adobe illustrator, Photoshop, Canva, Figma, CorelDRAW, Inkscape, GIMP, and with AI tools.
+                <h3> Graphic Design & Branding </h3><br>
+                Adobe illustrator, Photoshop, Canva, Figma, CorelDRAW, Inkscape, GIMP, and with AI tools
             </div>
         </div>
     </section>
@@ -133,7 +132,7 @@
 
     <section id="products" style="text-align:center;">
         <span class="headings" style="font-size: 50px;">What products are we developing?</span>
-        <div style="display: flex; flex-direction: column; justify-content: space-evenly; padding: 100px;">
+        <div id="products-div" style="display: flex; flex-direction: column; justify-content: space-evenly; padding: 100px;">
             <div>
                 <a href="https://www.doctorone.click" target="_blank" style="text-decoration: none;">
                     <h2 class="description font-style-montserrat" style="justify-self: start;">Doctor OneClick</h2>
@@ -171,7 +170,7 @@
     <div style="height: 100px;"></div>
     <section id="ceosmessage" style="text-align: center;" class="font-style-montserrat">
         <span class="headings" style="font-size: 50px;">Why do you need it?</span><br><br><br>
-        <div style=" padding: 100px; font-size: large;">
+        <div id="desc-text" style=" padding: 100px; font-size: large;">
             <q>Organizations' routine tasks are being digitized rapidly around the world. However, many organizations
                 still
                 struggle with day to day operations manually. The problem with manual work is that it is
