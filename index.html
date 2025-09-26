@@ -21,246 +21,784 @@
         content="Aliware is a computer software development entity. We develop different kinds of software, such as, application software, static website design & development, mobile applications, custom ERP solutions and graphics design & branding services.">
     <meta property="og:title" content="Aliware">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&family=Rubik+80s+Fade&family=Rubik+Glitch&family=Rubik+Iso&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Rubik+80s+Fade&family=Rubik+Iso&display=swap"
         rel="stylesheet">
-    <title>ALIWARE</title>
+    <title>ALIWARE - Software Development Solutions</title>
+    <style>
+        /* CSS Variables for consistent theming */
+        :root {
+            --primary-gradient: linear-gradient(0.5turn, #f5d5f0, #e8d0f5, #d5d6f8);
+            --accent-color: #d29ee9;
+            --accent-secondary: #e8a8df;
+            --accent-tertiary: #b495ef;
+            --text-dark: #333;
+            --text-light: #fff;
+            --shadow-color: rgba(212, 214, 248, 0.3);
+            --border-radius: 15px;
+            --section-spacing: 100px;
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--primary-gradient);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .rubik-iso-regular {
+            font-family: "Rubik Iso", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: var(--accent-secondary);
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        .rubik-80s-fade-regular {
+            font-family: "Rubik 80s Fade", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            color: var(--accent-tertiary);
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        .brand-heading {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            color: var(--accent-tertiary);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Layout Components */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: var(--section-spacing) 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--accent-tertiary);
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-tertiary);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: var(--transition);
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+        }
+
+        .nav-link:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            color: var(--accent-tertiary);
+        }
+
+        .cta-button {
+            background-color: var(--accent-color);
+            color: var(--text-dark);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            background-color: var(--accent-tertiary);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Services Section */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px var(--shadow-color);
+            transition: var(--transition);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px var(--shadow-color);
+        }
+
+        .service-card h3 {
+            color: var(--accent-tertiary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .service-card ul {
+            list-style-type: none;
+            margin-top: auto;
+        }
+
+        .service-card li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .service-card li:before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Products Section */
+        .product-showcase {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .product-item {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .product-image {
+            flex: 0 0 300px;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .product-item:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-content {
+            flex: 1;
+        }
+
+        .product-title {
+            color: var(--accent-tertiary);
+            margin-bottom: 1rem;
+        }
+
+        /* CEO Message Section */
+        .ceo-message {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .ceo-message:before {
+            content: """;
+            font-size: 5rem;
+            color: var(--accent-color);
+            position: absolute;
+            top: -1rem;
+            left: 1rem;
+            opacity: 0.3;
+        }
+
+        .ceo-message blockquote {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            text-align: center;
+        }
+
+        .contact-email {
+            font-size: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .contact-email a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-email a:hover {
+            text-decoration: underline;
+            color: var(--accent-tertiary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: var(--text-light);
+            padding: 3rem 0 1rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-column a {
+            color: #ccc;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-column a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* Divider */
+        .divider {
+            height: 3px;
+            background: linear-gradient(to right, transparent, #d29ee9, transparent);
+            margin: 3rem auto;
+            width: 75%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .product-item,
+            .product-item:nth-child(even) {
+                flex-direction: column;
+            }
+            
+            .product-image {
+                flex: 0 0 auto;
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-menu {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .service-card {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+        
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+        
+        .mt-2 {
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 
-<body class="body">
+<body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FFZZK76" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <nav class="top-nav">
-
-        <div class="nav-main-div">
-            <div class="">
-                <span class="logo-text rubik-glitch-regular"> <img id="logo-above-img"
-                        src="./images/logos/0.75x/Asset 6ldpi.png" alt=""> </span>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="./images/logos/0.75x/Asset 6ldpi.png" alt="Aliware Logo">
             </div>
-            <div class="nav-section font-style-montserrat">
-                <ul style="display: flex;list-style-type: none; justify-content: space-evenly;">
-                    <li id="services-li-item"><a href="#services" style="text-decoration: none;">Services</a></li>
-                    <li id="products-li-item"><a href="#products" style="text-decoration: none;">Products</a></li>
-                    <a href="#contact" style="text-decoration: none;">
-                        <li
-                            style="background-color: #30f88aff; padding: 13px; border-radius: 15px; border: 1px solid black; color:black">
-                            Get a quote</li>
-                    </a>
-                </ul>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#products" class="nav-link">Products</a></li>
+                <li><a href="#contact" class="cta-button">Get a Quote</a></li>
+            </ul>
         </div>
     </nav>
 
-    <!-- <section id="nav" style="height:100px"> -->
-
-    </section>
-    <div style="height: 100px;"></div>
-
-    <section id="main">
-        <div id="main-outer" style="display: flex; justify-content: space-evenly;">
-            <div class="main-content"
-                style="height: 100%; justify-content: center; align-self: center; display: flex; flex-direction: row;">
-                <div style="height: fit-content;width: min-content;">
-
-                    <div id="aliware-main" class="content rubik-glitch-regular headings" style="font-size: 100px;">
-                        ALIWARE</div>
-                    <div id="one-liner-main" class="font-style-montserrat">One solution for your tech problems</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title brand-heading">ALIWARE</h1>
+                    <p class="hero-subtitle">One solution for your tech problems</p>
+                    <a href="#contact" class="cta-button">Start Your Project</a>
+                </div>
+                <div class="hero-image">
+                    <img src="./images/developer-team.svg" alt="Development Team">
                 </div>
             </div>
-            <div id="image-div"><img id="main-image" src="./images/developer-team.svg" alt="" width="500px" height="500px"></div>
         </div>
     </section>
-    <div style="height: 100px;"></div>
-    <div style="height: 100px;"></div>
-    <div style="height: 10px; background-color: gold; width: 75%;"></div>
-    <div style="height: 100px;"></div>
 
+    <div class="divider"></div>
 
-
-
-    <section id="services" style="text-align: center;" class="font-style-montserrat">
-        <span class="headings" style="font-size: 50px; ">What services do we offer?</span>
-        <br>
-        <p id="desc-text" style="padding: 100px; font-size: 20px; ">
-            We are a software development services agency. We develop
-            different kinds of software, such as, application software, static website design & development, and mobile
-            applications. We also offer graphics design & branding services.
-        </p>
-        <div id="service-cards" style="display: flex; justify-content: space-evenly;">
-            <div class="service-card">
-                <h3>Web Design & Development</h3>
-                <br>Free content, text and images
-                <br>Responsive design
-                <br>SEO friendly
-                <br>Free domain for one year
-                <br>Free SSL certificate
-                <br>Free support for 3 months
-                <br>Free emails upto 3 users
-                <br>Free Google business profile
-            </div>
-            <div class="service-card">
-                <h3>SEO, SMM & Digital Marketing</h3><br>
-                <p>Organic traffic with free Google trends, Google analytics and social media accounts management</p>
-            </div>
-            <div class="service-card">
-                <h3> Custom Software Development </h3><br>
-                <p>Application software develpment is done using well known technological stacks:</p>
-                <p>Node.js, .NET, Java, with Reactjs and Angular, and ORACLE, MYSQL, SQL SERVER, and
-                    POSTGRESQL</p>
-            </div>
-            <div class="service-card">
-                <h3> Mobile Application Develoment </h3><br>
-                <p>React Native for Android and IOS user interface with firebase integration, and Expressjs and Nodejs
-                </p>
-            </div>
-            <div class="service-card">
-                <h3> Graphic Design & Branding </h3><br>
-                Adobe illustrator, Photoshop, Canva, Figma, CorelDRAW, Inkscape, GIMP, and with AI tools
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">What Services Do We Offer?</h2>
+            <p class="text-center mb-2" style="max-width: 800px; margin: 0 auto;">
+                We are a software development services agency specializing in creating tailored digital solutions 
+                including application software, website design & development, mobile applications, and comprehensive 
+                branding services.
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Design & Development</h3>
+                    <p>Professional website solutions that drive business growth and enhance online presence.</p>
+                    <ul>
+                        <li>Custom content strategy and implementation</li>
+                        <li>Fully responsive design for all devices</li>
+                        <li>SEO-optimized architecture</li>
+                        <li>Domain registration and management</li>
+                        <li>SSL security certification</li>
+                        <li>Comprehensive post-launch support</li>
+                        <li>Professional email solutions</li>
+                        <li>Google Business Profile optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>SEO, SMM & Digital Marketing</h3>
+                    <p>Strategic digital marketing solutions to increase visibility and drive qualified traffic.</p>
+                    <ul>
+                        <li>Comprehensive SEO audit and strategy</li>
+                        <li>Google Analytics implementation and reporting</li>
+                        <li>Social media management and content planning</li>
+                        <li>Content marketing and strategy development</li>
+                        <li>PPC campaign management and optimization</li>
+                        <li>Conversion rate optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Custom Software Development</h3>
+                    <p>Tailored software solutions designed to streamline your business operations.</p>
+                    <ul>
+                        <li>Enterprise application development</li>
+                        <li>Node.js, .NET, and Java solutions</li>
+                        <li>React.js and Angular frontend development</li>
+                        <li>Database design and optimization</li>
+                        <li>API development and integration</li>
+                        <li>Legacy system modernization</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Mobile Application Development</h3>
+                    <p>Cross-platform mobile solutions that engage users and drive business value.</p>
+                    <ul>
+                        <li>React Native development for iOS and Android</li>
+                        <li>Firebase backend integration</li>
+                        <li>Express.js and Node.js server solutions</li>
+                        <li>App Store and Google Play deployment</li>
+                        <li>User experience optimization</li>
+                        <li>Performance monitoring and analytics</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Graphic Design & Branding</h3>
+                    <p>Visual identity solutions that communicate your brand's unique value proposition.</p>
+                    <ul>
+                        <li>Complete brand identity development</li>
+                        <li>Logo design and brand guidelines</li>
+                        <li>Marketing collateral design</li>
+                        <li>UI/UX design for digital products</li>
+                        <li>Print and digital media design</li>
+                        <li>AI-enhanced design solutions</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Technical Support & Maintenance</h3>
+                    <p>Comprehensive technical support to ensure your systems run smoothly and efficiently.</p>
+                    <ul>
+                        <li>24/7 system monitoring and maintenance</li>
+                        <li>Proactive performance optimization</li>
+                        <li>Security updates and vulnerability management</li>
+                        <li>Backup and disaster recovery solutions</li>
+                        <li>Technical consultation and troubleshooting</li>
+                        <li>Scalability planning and implementation</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <div style="height: 100px;"></div>
-    <div style="height: 100px;"></div>
-    <div style="height: 10px;background-color: gold; width: 75%;float: right; left: 0px;"></div>
-    <div style="height: 100px;"></div>
-    <div style="height: 100px;"></div>
 
-    <section id="products" style="text-align:center;">
-        <span class="headings" style="font-size: 50px;">What products are we developing?</span>
-        <div id="products-div" style="display: flex; flex-direction: column; justify-content: space-evenly; padding: 100px;">
-            <div>
-                <a href="https://www.doctorone.click" target="_blank" style="text-decoration: none;">
-                    <h2 class="description font-style-montserrat" style="justify-self: start;">Doctor OneClick</h2>
-                    <img class="rounded product-image" src="./images/doc.jpg" width="300" height="200"
-                        alt="Doctor waving hand to patient"
-                        style="float: left; margin-right: 30px; margin-bottom: 20px;">
-                </a>
-                <p class="description font-style-montserrat font-large-text-align-left">
-                    Doctor
-                    OneClick is an easy doctor appointment and patient management system. The motivation of building
-                    such software is to provide patients with easy access to doctors around their homes and
-                    connecting them 24/7. Patients or their caretakers are now able to schedule appointments with
-                    doctors in a few clicks. Checkup can be tele checkup virtually over the internet when physical
-                    presenece is not neccessary or in-person checkup as suggested by the doctor. There
-                    are many more feature available in this software.</p>
-            </div>
-            <div>
-                <h2 class="description font-style-montserrat" style="justify-self: start;">Fielderr</h2>
-                <img class="rounded product-image" src="./images/fielderr.jpg" width="300" height="200"
-                    alt="Sales rep talking to pharmacist" style="float: left; margin-right: 30px; margin-bottom: 20px;">
-                <p class="description font-style-montserrat font-large-text-align-left">
-                    Fielderr is a field service system software. It is a territory mapping tool with tasks dispatching
-                    and tracking features. Fielderr is a B2B software that manages day to day operations of field
-                    working businesses such as pharma companies in which workers visit pharmacies to ensure their
-                    operations run smoothly. This tool manages pharmacies locations and sales representatives' visits to
-                    pharmacies and tracking of tasks assigned to them. Other features include users management
-                    dashboard, products management, task dispatching and submission of completed tasks, location
-                    sharing, tasks automation and a lot more.</p>
+    <div class="divider"></div>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">What Products Are We Developing?</h2>
+            
+            <div class="product-showcase">
+                <div class="product-item">
+                    <div class="product-image">
+                        <a href="https://www.doctorone.click" target="_blank">
+                            <img src="./images/doc.jpg" alt="Doctor OneClick Interface">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Doctor OneClick</h3>
+                        <p>
+                            Doctor OneClick is an intuitive doctor appointment and patient management system designed 
+                            to connect patients with healthcare providers seamlessly. Our platform enables patients to 
+                            schedule appointments with nearby doctors in just a few clicks, offering both telemedicine 
+                            consultations and in-person visits based on medical needs.
+                        </p>
+                        <a href="https://www.doctorone.click" target="_blank" class="cta-button">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./images/fielderr.jpg" alt="Fielderr Interface">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Fielderr</h3>
+                        <p>
+                            Fielderr is a comprehensive field service management system with territory mapping, 
+                            task dispatching, and real-time tracking capabilities. Designed for B2B operations like 
+                            pharmaceutical companies, it streamlines field representative activities, pharmacy visit 
+                            management, and task automation to optimize field operations and increase productivity.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </section>
-    <div style="height: 10px;background-color: gold; width: 75%;"></div>
-    <div style="height: 100px;"></div>
-    <section id="ceosmessage" style="text-align: center;" class="font-style-montserrat">
-        <span class="headings" style="font-size: 50px;">Why do you need it?</span><br><br><br>
-        <div id="desc-text" style=" padding: 100px; font-size: large;">
-            <q>Organizations' routine tasks are being digitized rapidly around the world. However, many organizations
-                still
-                struggle with day to day operations manually. The problem with manual work is that it is
-                time-consuming, error-prone, and resourse intensive, leading to increased operational cost. This is why
-                many small and medium-sized businesses stay behind and could not keep the pace, even after years of
-                operation.
-                Digital transformation involves understanding and implementing various technologies that streamline
-                operations, enhance productivity, and improve customer engagement. For instance, automating routine
-                tasks can free up valuable time and resources, allowing businesses to focus on strategic growth and
-                innovation, leading to save expenses. Moreover, ensuring online accessibility through robust digital
-                platforms can expand a business’s reach, providing customers with convenient access to products and
-                services anytime, anywhere...</q><a href=" https://www.youtube.com/watch?v=PeD35QUO_Vs" target="_blank"
-            style="text-decoration: none;"> Learn more</a>
+
+    <div class="divider"></div>
+
+    <!-- CEO Message Section -->
+    <section id="ceosmessage" class="section">
+        <div class="container">
+            <h2 class="section-title">Why Digital Transformation Matters</h2>
+            
+            <div class="ceo-message">
+                <blockquote>
+                    Organizations' routine tasks are being digitized rapidly around the world. However, many organizations 
+                    still struggle with day to day operations manually. The problem with manual work is that it is 
+                    time-consuming, error-prone, and resource intensive, leading to increased operational cost. This is why 
+                    many small and medium-sized businesses stay behind and could not keep the pace, even after years of operation.
+                    Digital transformation involves understanding and implementing various technologies that streamline 
+                    operations, enhance productivity, and improve customer engagement. For instance, automating routine 
+                    tasks can free up valuable time and resources, allowing businesses to focus on strategic growth and 
+                    innovation, leading to save expenses. Moreover, ensuring online accessibility through robust digital 
+                    platforms can expand a business's reach, providing customers with convenient access to products and 
+                    services anytime, anywhere...
+                </blockquote>
+                <a href="https://www.youtube.com/watch?v=PeD35QUO_Vs" target="_blank" class="cta-button">Learn More</a>
+            </div>
         </div>
     </section>
-    <div style="height: 10px;background-color: gold; width: 75%; float: right;"></div>
-    <div style="height: 100px;"></div>
-    <div style="height: 100px;"></div>
-    <section id="contact" style="text-align: center;" class="font-style-montserrat">
-        <span class="headings" style="font-size: 50px;">Let's get started</span><br> <br> <br>
-        <span style="font-size: medium; ">Email us your requirements <br> <a href="mailto:quote@aliware.online"
-                style="text-decoration: none;">quote@aliware.online</a></span>
-        <br><br>
 
+    <div class="divider"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Get Started</h2>
+            <p class="contact-email">
+                Email us your requirements at <br>
+                <a href="mailto:quote@aliware.online">quote@aliware.online</a>
+            </p>
+            <a href="mailto:quote@aliware.online" class="cta-button">Contact Us Now</a>
+        </div>
     </section>
-    <div style="height: 100px;"></div>
-    <div style="height: 100px;"></div>
-    <div style="height: 10px;background-color: gold; width: 100%;"></div>
 
-
+    <!-- Footer -->
     <footer>
-        <div class="footer">
-            <div style="max-width: 300px;">
-                <!-- <span class="logo-text rubik-glitch-regular">ALIWARE</span> -->
-                <img src="./images/logos/0.75x/Asset 6ldpi.png" alt="">
-                <br> <br>
-                <div class="footer-about font-style-montserrat">We are a software development services agency. We
-                    develop
-                    different kinds of softwares tailored to our client's needs, such as, application software, static
-                    website design & development, and
-                    mobile applications. We also offer graphics design & branding services.</div>
-                <br>
-                <div class="footer-about">Address: <strong>Office 327, 4th floor, Eden center,
-                        Jail Road, Lahore, Pakistan.</strong></div>
-                <br>
-                <div class="footer-about font-style-montserrat"> <a href="https://share.google/f3NWuG4zDE8DlkFXY"
-                        target="_blank" style="text-decoration: none;">
-                        Google profile</a></div>
-                <br><br>
-
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <img src="./images/logos/0.75x/Asset 6ldpi.png" alt="Aliware Logo" style="height: 50px; margin-bottom: 1rem;">
+                    <p>
+                        We are a software development services agency specializing in creating tailored digital 
+                        solutions for businesses of all sizes.
+                    </p>
+                    <p class="mt-2">
+                        <strong>Office 327, 4th floor, Eden Center,<br>
+                        Jail Road, Lahore, Pakistan.</strong>
+                    </p>
+                    <p class="mt-2">
+                        <a href="https://share.google/f3NWuG4zDE8DlkFXY" target="_blank">Google Profile</a>
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#services">Web Design & Development</a></li>
+                        <li><a href="#services">Application Software Development</a></li>
+                        <li><a href="#services">Mobile Application Development</a></li>
+                        <li><a href="#services">Graphic Design & Branding</a></li>
+                        <li><a href="#services">SEO & Digital Marketing</a></li>
+                        <li><a href="#services">Technical Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Products</h3>
+                    <ul>
+                        <li><a href="https://www.doctorone.click" target="_blank">Doctor OneClick</a></li>
+                        <li><a href="#products">Fielderr</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/AliwareOnline" target="_blank">
+                            <img src="images/github-mark-white.png" alt="GitHub" width="30">
+                        </a>
+                        <a href="https://www.linkedin.com/company/103904048" target="_blank">
+                            <img src="images/InBug-White.png" alt="LinkedIn" width="30">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61561478107420" target="_blank">
+                            <img src="images/Facebook Brand Asset Pack/Logo/Secondary Logo/Facebook_Logo_Secondary.png" alt="Facebook" width="30">
+                        </a>
+                        <a href="https://wa.me/923001118174" target="_blank">
+                            <img src="./images/WhatsAppButtonGreenSmall.png" alt="WhatsApp" height="30">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <ul class="list-style-none font-style-montserrat" style="line-height: 30px; ">
-                    <h2>Services</h2>
-                    <li>Web Design & Development</li>
-                    <li>Application Software Development</li>
-                    <li>Mobile Application Development</li>
-                    <li>Graphic Design & Branding</li>
-                    <li>SEO & Digital Marketing</li>
-                    <li> <a aria-label="Chat on WhatsApp" href="https://wa.me/923001118174" target="_blank"
-                            style="text-decoration: none;">Technical Support </a> </li>
-                </ul>
-            </div>
-            <div>
-                <ul class="list-style-none font-style-montserrat" style="line-height: 30px; ">
-                    <h2>Products</h2>
-                    <li><a href="https://www.doctorone.click" style="text-decoration: none;">Doctor OneClick</a></li>
-                    <li>Fielderr</li>
-                </ul>
-            </div>
-            <div>
-                <ul id="socials" class="list-style-none font-style-montserrat" style="line-height: 30px;">
-                    <h2>Socials</h2>
-                    <li><a href="https://github.com/AliwareOnline" target="_blank" style="text-decoration: none;"><img
-                                src="images/github-mark.png" alt="Github logo" width="30px"></a></li>
-                    <li><a href="https://www.linkedin.com/company/103904048" target="_blank"
-                            style="text-decoration: none;"><img src="images/InBug-White.png" alt="LinkedIn logo"
-                                width="30px"></a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=61561478107420" target="_blank"
-                            style="text-decoration: none;"><img
-                                src="images/Facebook Brand Asset Pack/Logo/Secondary Logo/Facebook_Logo_Secondary.png"
-                                alt="Facebook logo" width="30px"></a></li>
-                    <li> <a aria-label="Chat on WhatsApp" href="https://wa.me/923001118174" target=_blank><img
-                                height="30px" alt="Chat on WhatsApp" src="./images/WhatsAppButtonGreenSmall.png" /> </a>
-                    </li>
-                </ul>
+            
+            <div class="copyright">
+                Aliware &copy; 2025. All rights reserved.
             </div>
         </div>
     </footer>
-    <div style="text-align: center; margin-top: 150px;">Aliware &copy; All rights reserved.</div>
 </body>
 
 </html>
