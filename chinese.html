@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="utf-8">
@@ -15,18 +15,18 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-5FFZZK76');</script>
     <!-- End Google Tag Manager -->
-    <meta name="description" content="Aliware is a private company that provides software services.">
+    <meta name="description" content="Aliware是一家提供软件服务的私营公司。">
     <meta property="og:image" content="https://doctorone.click/images/logo.png">
     <meta property="og:description"
-        content="Aliware is a computer software development entity. We develop different kinds of software, such as, application software, static website design & development, mobile applications, custom ERP solutions and graphics design & branding services.">
+        content="Aliware是一家计算机软件开发实体。我们开发不同类型的软件，例如应用软件、静态网站设计与开发、移动应用程序、定制ERP解决方案以及图形设计与品牌服务。">
     <meta property="og:title" content="Aliware">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Rubik+80s+Fade&family=Rubik+Iso&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <title>ALIWARE - Software Development Solutions</title>
+    <title>ALIWARE - 软件开发解决方案</title>
     <style>
         /* CSS Variables for consistent theming */
         :root {
@@ -55,7 +55,7 @@
 
         body {
             background: var(--primary-gradient);
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Noto Sans SC', 'Montserrat', sans-serif;
             color: var(--text-dark);
             line-height: 1.6;
             overflow-x: hidden;
@@ -67,24 +67,8 @@
             margin-bottom: 1rem;
         }
 
-        .rubik-iso-regular {
-            font-family: "Rubik Iso", system-ui;
-            font-weight: 400;
-            font-style: normal;
-            color: var(--accent-secondary);
-            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        }
-
-        .rubik-80s-fade-regular {
-            font-family: "Rubik 80s Fade", system-ui;
-            font-weight: 400;
-            font-style: normal;
-            color: var(--accent-tertiary);
-            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-        }
-
         .brand-heading {
-            font-family: "Montserrat", sans-serif;
+            font-family: "Noto Sans SC", sans-serif;
             font-weight: 700;
             color: var(--accent-tertiary);
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
@@ -115,7 +99,6 @@
             top: 0;
             left: 0;
             width: 100%;
-            /* background-color: rgba(255, 255, 255, 0.95); */
             backdrop-filter: blur(10px);
             z-index: 1000;
             padding: 1rem 0;
@@ -149,13 +132,12 @@
             display: flex;
             list-style: none;
             gap: 2rem;
+            align-items: center;
         }
 
         .nav-link {
             text-decoration: none;
-            /* color: var(--text-dark); */
-            color:antiquewhite;
-
+            color: antiquewhite;
             font-weight: 500;
             transition: var(--transition);
             padding: 0.5rem 1rem;
@@ -295,7 +277,7 @@
         .hero-subtitle {
             font-size: 1.5rem;
             margin-bottom: 2rem;
-            color: #555;
+            color: wheat;
         }
 
         .hero-image {
@@ -437,6 +419,7 @@
         .contact-email {
             font-size: 1.5rem;
             margin: 2rem 0;
+            color: white;
         }
 
         .contact-email a {
@@ -565,6 +548,11 @@
             .service-card {
                 padding: 1.5rem;
             }
+            
+            .language-dropdown {
+                right: auto;
+                left: 0;
+            }
         }
 
         @media (max-width: 576px) {
@@ -617,10 +605,10 @@
                 <img src="./images/Asset 6mdpi.png" alt="Aliware Logo">
             </div>
             <ul class="nav-menu">
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#products" class="nav-link">Products</a></li>
-                <li><a href="#contact" class="cta-button">Get a Quote</a></li>
-                 <li class="language-switcher">
+                <li><a href="#services" class="nav-link">服务</a></li>
+                <li><a href="#products" class="nav-link">产品</a></li>
+                <li><a href="#contact" class="cta-button">获取报价</a></li>
+                <li class="language-switcher">
                     <div class="language-btn">
                         <span>🌐</span>
                         <span>中文</span>
@@ -650,12 +638,11 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <!-- <h1 class="hero-title brand-heading">ALIWARE</h1> -->
-                    <p class="hero-subtitle" style="color:wheat">In a constantly changing world, digitalization is no longer just a competitive advantage; it is crucial to embrace it. Adopting modern technologies is essential to meet today’s demands for efficiency, flexibility, and agility.</p>
-                    <a href="#contact" class="cta-button">Start Your Project</a>
+                    <p class="hero-subtitle">在不断变化的世界中，数字化不再仅仅是竞争优势；拥抱数字化至关重要。采用现代技术对于满足当今对效率、灵活性和敏捷性的需求至关重要。</p>
+                    <a href="#contact" class="cta-button">开始您的项目</a>
                 </div>
                 <div class="hero-image">
-                    <img src="./images/developer-team.svg" alt="Development Team">
+                    <img src="./images/developer-team.svg" alt="开发团队">
                 </div>
             </div>
         </div>
@@ -666,91 +653,89 @@
     <!-- Services Section -->
     <section id="services" class="section">
         <div class="container">
-            <h2 class="section-title">What Services Do We Offer?</h2>
+            <h2 class="section-title">我们提供哪些服务？</h2>
             <p class="text-center mb-2" style="max-width: 800px; margin: 0 auto; color:wheat;">
-                We are a software development services agency specializing in creating tailored digital solutions 
-                including application software, website design & development, mobile applications, and comprehensive 
-                branding services.
+                我们是一家软件开发服务公司，专门创建定制数字解决方案，包括应用软件、网站设计与开发、移动应用程序以及全面的品牌服务。
             </p>
             
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Web Design & Development</h3>
-                    <p>Professional website solutions that drive business growth and enhance online presence.</p>
+                    <h3>网站设计与开发</h3>
+                    <p>专业的网站解决方案，推动业务增长并增强在线形象。</p>
                     <ul>
-                        <li>Custom content strategy and implementation</li>
-                        <li>Fully responsive design for all devices</li>
-                        <li>SEO-optimized architecture</li>
-                        <li>Domain registration and management</li>
-                        <li>SSL security certification</li>
-                        <li>Comprehensive post-launch support</li>
-                        <li>Professional email solutions</li>
-                        <li>Google Business Profile optimization</li>
+                        <li>定制内容策略与实施</li>
+                        <li>全设备响应式设计</li>
+                        <li>SEO优化架构</li>
+                        <li>域名注册与管理</li>
+                        <li>SSL安全认证</li>
+                        <li>全面的上线后支持</li>
+                        <li>专业电子邮件解决方案</li>
+                        <li>Google商家资料优化</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
-                    <h3>SEO, SMM & Digital Marketing</h3>
-                    <p>Strategic digital marketing solutions to increase visibility and drive qualified traffic.</p>
+                    <h3>SEO、社交媒体营销和数字营销</h3>
+                    <p>战略性数字营销解决方案，提高可见度并驱动合格流量。</p>
                     <ul>
-                        <li>Comprehensive SEO audit and strategy</li>
-                        <li>Google Analytics implementation and reporting</li>
-                        <li>Social media management and content planning</li>
-                        <li>Content marketing and strategy development</li>
-                        <li>PPC campaign management and optimization</li>
-                        <li>Conversion rate optimization</li>
+                        <li>全面的SEO审计和策略</li>
+                        <li>Google Analytics实施和报告</li>
+                        <li>社交媒体管理和内容规划</li>
+                        <li>内容营销和策略开发</li>
+                        <li>PPC活动管理和优化</li>
+                        <li>转化率优化</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
-                    <h3>Custom Software Development</h3>
-                    <p>Tailored software solutions designed to streamline your business operations.</p>
+                    <h3>定制软件开发</h3>
+                    <p>量身定制的软件解决方案，旨在简化您的业务运营。</p>
                     <ul>
-                        <li>Enterprise application development</li>
-                        <li>Node.js, .NET, and Java solutions</li>
-                        <li>React.js and Angular frontend development</li>
-                        <li>Database design and optimization</li>
-                        <li>API development and integration</li>
-                        <li>Legacy system modernization</li>
+                        <li>企业应用程序开发</li>
+                        <li>Node.js、.NET和Java解决方案</li>
+                        <li>React.js和Angular前端开发</li>
+                        <li>数据库设计和优化</li>
+                        <li>API开发和集成</li>
+                        <li>遗留系统现代化</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
-                    <h3>Mobile Application Development</h3>
-                    <p>Cross-platform mobile solutions that engage users and drive business value.</p>
+                    <h3>移动应用程序开发</h3>
+                    <p>跨平台移动解决方案，吸引用户并推动业务价值。</p>
                     <ul>
-                        <li>React Native development for iOS and Android</li>
-                        <li>Firebase backend integration</li>
-                        <li>Modern UI/UX design principles</li>
-                        <li>App Store and Google Play deployment</li>
-                        <li>User experience optimization</li>
-                        <li>Performance monitoring and analytics</li>
+                        <li>iOS和Android的React Native开发</li>
+                        <li>Firebase后端集成</li>
+                        <li>现代UI/UX设计原则</li>
+                        <li>App Store和Google Play部署</li>
+                        <li>用户体验优化</li>
+                        <li>性能监控和分析</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
-                    <h3>Graphic Design & Branding</h3>
-                    <p>Visual identity solutions that communicate your brand's unique value proposition.</p>
+                    <h3>图形设计与品牌</h3>
+                    <p>传达品牌独特价值主张的视觉识别解决方案。</p>
                     <ul>
-                        <li>Complete brand identity development</li>
-                        <li>Logo design and brand guidelines</li>
-                        <li>Marketing collateral design</li>
-                        <li>UI/UX design for digital products</li>
-                        <li>Print and digital media design</li>
-                        <li>AI-enhanced design solutions</li>
+                        <li>完整的品牌识别开发</li>
+                        <li>徽标设计和品牌指南</li>
+                        <li>营销资料设计</li>
+                        <li>数字产品的UI/UX设计</li>
+                        <li>印刷和数字媒体设计</li>
+                        <li>AI增强的设计解决方案</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
-                    <h3>Technical Support & Maintenance</h3>
-                    <p>Comprehensive technical support to ensure your systems run smoothly and efficiently.</p>
+                    <h3>技术支持与维护</h3>
+                    <p>全面的技术支持，确保您的系统平稳高效运行。</p>
                     <ul>
-                        <li>24/7 system monitoring and maintenance</li>
-                        <li>Proactive performance optimization</li>
-                        <li>Security updates and vulnerability management</li>
-                        <li>Backup and disaster recovery solutions</li>
-                        <li>Technical consultation and troubleshooting</li>
-                        <li>Scalability planning and implementation</li>
+                        <li>24/7系统监控和维护</li>
+                        <li>主动性能优化</li>
+                        <li>安全更新和漏洞管理</li>
+                        <li>备份和灾难恢复解决方案</li>
+                        <li>技术咨询和故障排除</li>
+                        <li>可扩展性规划和实施</li>
                     </ul>
                 </div>
             </div>
@@ -762,38 +747,32 @@
     <!-- Products Section -->
     <section id="products" class="section">
         <div class="container">
-            <h2 class="section-title">What Products Are We Developing?</h2>
+            <h2 class="section-title">我们正在开发什么产品？</h2>
             
             <div class="product-showcase">
                 <div class="product-item">
                     <div class="product-image">
                         <a href="https://www.doctorone.click" target="_blank">
-                            <img src="./images/doc.jpg" alt="Doctor OneClick Interface">
+                            <img src="./images/doc.jpg" alt="Doctor OneClick 界面">
                         </a>
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Doctor OneClick</h3>
                         <p>
-                            Doctor OneClick is an intuitive doctor appointment and patient management system designed 
-                            to connect patients with healthcare providers seamlessly. Our platform enables patients to 
-                            schedule appointments with nearby doctors in just a few clicks, offering both telemedicine 
-                            consultations and in-person visits based on medical needs.
+                            Doctor OneClick 是一个直观的医生预约和患者管理系统，旨在无缝连接患者与医疗保健提供者。我们的平台使患者只需点击几下即可与附近的医生安排预约，根据医疗需求提供远程医疗咨询和面对面就诊。
                         </p>
-                        <a href="https://www.doctorone.click" target="_blank" class="cta-button">Learn More</a>
+                        <a href="https://www.doctorone.click" target="_blank" class="cta-button">了解更多</a>
                     </div>
                 </div>
                 
                 <div class="product-item">
                     <div class="product-image">
-                        <img src="./images/fielderr.jpg" alt="Fielderr Interface">
+                        <img src="./images/fielderr.jpg" alt="Fielderr 界面">
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Fielderr</h3>
                         <p>
-                            Fielderr is a comprehensive field service management system with territory mapping, 
-                            task dispatching, and real-time tracking capabilities. Designed for B2B operations like 
-                            pharmaceutical companies, it streamlines field representative activities, pharmacy visit 
-                            management, and task automation to optimize field operations and increase productivity.
+                            Fielderr 是一个全面的现场服务管理系统，具有区域映射、任务调度和实时跟踪功能。专为制药公司等B2B运营设计，它简化了现场代表活动、药店访问管理和任务自动化，以优化现场运营并提高生产力。
                         </p>
                     </div>
                 </div>
@@ -806,22 +785,14 @@
     <!-- CEO Message Section -->
     <section id="ceosmessage" class="section">
         <div class="container">
-            <h2 class="section-title">Why Digital Transformation Matters</h2>
+            <h2 class="section-title">为什么数字化转型很重要</h2>
             
             <div class="ceo-message">
                 <blockquote>
-                    Organizations' routine tasks are being digitized rapidly around the world. However, many organizations 
-                    still struggle with day to day operations manually. The problem with manual work is that it is 
-                    time-consuming, error-prone, and resource intensive, leading to increased operational cost. This is why 
-                    many small and medium-sized businesses stay behind and could not keep the pace, even after years of operation.
-                    Digital transformation involves understanding and implementing various technologies that streamline 
-                    operations, enhance productivity, and improve customer engagement. For instance, automating routine 
-                    tasks can free up valuable time and resources, allowing businesses to focus on strategic growth and 
-                    innovation, leading to save expenses. Moreover, ensuring online accessibility through robust digital 
-                    platforms can expand a business's reach, providing customers with convenient access to products and 
-                    services anytime, anywhere...
+                    全球范围内，组织的日常任务正在迅速数字化。然而，许多组织仍然在手动处理日常运营。手动工作的问题是耗时、容易出错且资源密集，导致运营成本增加。这就是为什么许多中小型企业落后，即使经过多年的运营也无法跟上步伐。
+                    数字化转型涉及理解和实施各种技术，以简化运营、提高生产力和改善客户参与度。例如，自动化日常任务可以释放宝贵的时间和资源，使企业能够专注于战略增长和创新，从而节省开支。此外，通过强大的数字平台确保在线可访问性可以扩大企业的覆盖范围，为客户提供随时随地便捷访问产品和服务的机会...
                 </blockquote>
-                <a href="https://www.youtube.com/watch?v=PeD35QUO_Vs" target="_blank" class="cta-button">Learn More</a>
+                <a href="https://www.youtube.com/watch?v=PeD35QUO_Vs" target="_blank" class="cta-button">了解更多</a>
             </div>
         </div>
     </section>
@@ -831,10 +802,10 @@
      <!-- About the trademark name Section -->
     <section id="trademark" class="section">
         <div class="container">
-            <h2 class="section-title">About the name ALIWARE</h2>
+            <h2 class="section-title">关于 ALIWARE 名称</h2>
             
             <div class="ceo-message">
-                Introducing ALIWARE, a new brand launching in Pakistan and China. The name connects with the trusted "ALI-" brand family, which includes giants like ALIEXPRESS, ALIPAY, ALIBABA, ALISOFT, ALIMAK, and ALIYUN, signaling our ambition for significant growth and market leadership in the region.
+                介绍 ALIWARE，一个在巴基斯坦和中国推出的新品牌。该名称与值得信赖的"ALI-"品牌家族相连，包括 ALIEXPRESS、ALIPAY、ALIBABA、ALISOFT、ALIMAK 和 ALIYUN 等巨头，标志着我们对该地区显著增长和市场领导地位的雄心。
             </div>
         </div>
     </section>
@@ -844,12 +815,12 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="container">
-            <h2 class="section-title">Let's Get Started</h2>
-            <p class="contact-email"  style="color:white">
-                Email us your requirements at <br>
+            <h2 class="section-title">让我们开始吧</h2>
+            <p class="contact-email">
+                将您的需求发送至 <br>
                 <a href="mailto:quote@aliware.online">quote@aliware.online</a>
             </p>
-            <a href="mailto:quote@aliware.online" class="cta-button">Contact Us Now</a>
+            <a href="mailto:quote@aliware.online" class="cta-button">立即联系我们</a>
         </div>
     </section>
 
@@ -860,8 +831,7 @@
                 <div class="footer-column">
                     <img src="./images/Asset 6mdpi.png" alt="Aliware Logo" style="height: 50px; margin-bottom: 1rem;">
                     <p>
-                        We are a software development services agency specializing in creating tailored digital 
-                        solutions for businesses of all sizes.
+                        我们是一家软件开发服务公司，专门为各种规模的企业创建定制数字解决方案。
                     </p>
                     <p class="mt-2">
                         <strong>Office 327, 4th floor, Eden Center,<br>
@@ -871,19 +841,19 @@
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Services</h3>
+                    <h3>服务</h3>
                     <ul>
-                        <li><a href="#services">Web Design & Development</a></li>
-                        <li><a href="#services">Application Software Development</a></li>
-                        <li><a href="#services">Mobile Application Development</a></li>
-                        <li><a href="#services">Graphic Design & Branding</a></li>
-                        <li><a href="#services">SEO & Digital Marketing</a></li>
-                        <li><a href="#services">Technical Support</a></li>
+                        <li><a href="#services">网站设计与开发</a></li>
+                        <li><a href="#services">应用软件开发</a></li>
+                        <li><a href="#services">移动应用程序开发</a></li>
+                        <li><a href="#services">图形设计与品牌</a></li>
+                        <li><a href="#services">SEO与数字营销</a></li>
+                        <li><a href="#services">技术支持</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Products</h3>
+                    <h3>产品</h3>
                     <ul>
                         <li><a href="https://www.doctorone.click" target="_blank">Doctor OneClick</a></li>
                         <li><a href="#products">Fielderr</a></li>
@@ -891,7 +861,7 @@
                 </div>
                 
                 <div class="footer-column">
-                    <h3>Connect With Us</h3>
+                    <h3>联系我们</h3>
                     <div class="social-links">
                         <a href="https://github.com/AliwareOnline" target="_blank">
                             <img src="images/github-mark-white.png" alt="GitHub" width="30">
@@ -913,7 +883,7 @@
             </div>
             
             <div class="copyright">
-                Aliware &copy; 2025. All rights reserved.
+                Aliware &copy; 2025. 保留所有权利。
             </div>
         </div>
     </footer>
