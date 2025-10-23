@@ -1,13 +1,13 @@
 /* CSS Variables for consistent theming */
         :root {
-            --primary-gradient: linear-gradient(0.5turn, rgb(33, 1, 28), #33004f, #000122);
-            --accent-color: #d29ee9;
-            --accent-secondary: #e8a8df;
-            --accent-tertiary: #b495ef;
-            --text-dark: #333;
-            --text-light: #fff;
-            --shadow-color: rgba(212, 214, 248, 0.3);
-            --border-radius: 15px;
+            --primary-gradient: linear-gradient(0.5turn, rgb(55, 81, 250), #180138, #02055f);
+            --accent-color: #5a0081;
+            --accent-secondary: #4d0343;
+            --accent-tertiary: #7d37ff;
+            --text-dark: #601212;
+            --text-light: #e9fcfd;
+            --shadow-color: rgba(87, 95, 246, 0.3);
+            --border-radius: 10px;
             --section-spacing: 100px;
             --transition: all 0.3s ease;
         }
@@ -140,7 +140,7 @@
         .cta-button {
             background-color: var(--accent-color);
             color: var(--text-dark);
-            padding: 0.75rem 1.5rem;
+            padding: 0.50rem 1.0rem;
             border-radius: var(--border-radius);
             border: none;
             font-weight: 600;
@@ -293,7 +293,7 @@
 
         .service-card {
             background-color: transparent;
-            color:white;
+            color:var(--text-light);
             padding: 2rem;
             border-radius: var(--border-radius);
             box-shadow: 0 5px 15px var(--shadow-color);
@@ -347,7 +347,7 @@
             align-items: center;
             gap: 3rem;
             background-color: transparent;
-            color:white;
+            color:var(--text-light);
             padding: 2rem;
             /* border-radius: var(--border-radius); */
             /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
@@ -392,7 +392,7 @@
         /* CEO Message Section */
         .ceo-message {
             background-color: transparent;
-            color:white;
+            color:var(--text-light);
             padding: 3rem;
             border-radius: var(--border-radius);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -465,14 +465,14 @@
         }
 
         .footer-column a {
-            color: #ccc;
+            /* color: #ccc; */
             text-decoration: none;
             transition: var(--transition);
         }
 
-        .footer-column a:hover {
-            color: var(--accent-color);
-        }
+        /* .footer-column a:hover { */
+            /* color: var(--accent-color); */
+        /* } */
 
         .social-links {
             display: flex;
@@ -500,7 +500,9 @@
         /* Divider */
         .divider {
             height: 3px;
-            background: linear-gradient(to right, transparent, #d29ee9, transparent);
+            /* --accent-color: #5a0081; */
+
+            background: linear-gradient(to right, transparent, #5a0081, transparent);
             margin: 3rem auto;
             width: 75%;
         }
