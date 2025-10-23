@@ -139,7 +139,7 @@
 
         .cta-button {
             background-color: var(--accent-color);
-            color: var(--text-dark);
+            color: #8f6b6b;
             padding: 0.50rem 1.0rem;
             border-radius: var(--border-radius);
             border: none;
@@ -466,13 +466,14 @@
 
         .footer-column a {
             /* color: #ccc; */
+            color: var(--text-light) !important;
             text-decoration: none;
             transition: var(--transition);
         }
 
-        /* .footer-column a:hover { */
-            /* color: var(--accent-color); */
-        /* } */
+        .footer-column a:hover { 
+            color: var(--accent-tertiary);
+        }
 
         .social-links {
             display: flex;
