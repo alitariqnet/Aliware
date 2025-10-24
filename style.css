@@ -244,6 +244,9 @@
             display: flex;
             align-items: center;
             padding-top: 80px;
+            background-image: url('images/project-manageent-software-header-image.jpg'); 
+            background-size: cover; 
+            mix-blend-mode: luminosity;
         }
 
         .hero-content {
@@ -264,13 +267,16 @@
 
         .hero-subtitle {
             background-color: transparent;
-            color:white;
             padding: 2rem;
             border-radius: var(--border-radius);
             box-shadow: 0 5px 15px var(--shadow-color);
             transition: var(--transition);
             font-size: 1.5rem;
             margin-bottom: 2rem;
+            color:var(--text-light); 
+            backdrop-filter: blur(3px); 
+            font-weight: 600;
+
         }
 
         .hero-image {
@@ -472,7 +478,7 @@
         }
 
         .footer-column a:hover { 
-            color: var(--accent-tertiary);
+            color: var(--accent-color);
         }
 
         .social-links {
@@ -508,6 +514,37 @@
             width: 75%;
         }
 
+        .path {
+        width: 50px;
+        /* height: 50px; */
+        position: absolute;
+        /* background-color: magenta; */
+        animation: move 10s linear infinite;
+        }
+
+        .xywh-path-1 {
+        offset-path: xywh(0px 0px 100% 100% round 5%);
+        }
+
+        .xywh-path-2 {
+        /* offset-path: xywh(20px 30% 150% 200%); */
+        /* offset-path: path("M 10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80"); */
+        /* offset-path: path("M-70,-40 C-70,70 70,70 70,-40"); */
+        }
+
+        @keyframes move {
+        0% {
+            offset-distance: 0%;
+        }
+        100% {
+            offset-distance: 100%;
+        }
+        }
+
+
+        
+
+        
         /* Responsive Design */
         @media (max-width: 992px) {
             .hero-content {
@@ -643,3 +680,4 @@
         font-size: 0.85rem;
     }
 }
+
